@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: "Satoshi", sans-serif; 
+}

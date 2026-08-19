@@ -1,0 +1,1 @@
+Je suis **Loanne MEURET MARCUCCI**, **psychologue** clinicienne formée en **thérapie cognitivo-comportemetale (TCC)**. Après avoir travaillé trois ans en service de psychiatrie de l’enfant et de l’adolescent au CHU de Strasbourg, j’ai orienté mon activité vers le cabinet libéral où je propose des suivis individuels et entretiens familiaux pour un public adolescent et adulte. 
