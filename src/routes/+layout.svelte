@@ -2,12 +2,10 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Logo from '$components/logo.svelte';
-	import { page } from '$app/state';
 	import NavLink from '$components/nav-link.svelte';
+	import { resolve } from '$app/paths';
 
 	let { children } = $props();
-
-	$inspect(page.url);
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
@@ -18,11 +16,11 @@
 		<div class="flex justify-center"><Logo></Logo></div>
 		<ul class="col-span-4 flex justify-center gap-16 font-bold transition-colors">
 			<li>
-				<NavLink href="/">Présentation</NavLink>
+				<NavLink href={resolve('/')}>Présentation</NavLink>
 			</li>
-			<li><NavLink href="/contact">Contact & RDV</NavLink></li>
-			<li><NavLink href="/tcc">TCC</NavLink></li>
-			<li><NavLink href="/resources">Ressources</NavLink></li>
+			<li><NavLink href={resolve('/contact')}>Contact & RDV</NavLink></li>
+			<li><NavLink href={resolve('/tcc')}>TCC</NavLink></li>
+			<li><NavLink href={resolve('/resources')}>Ressources</NavLink></li>
 		</ul>
 	</header>
 	{@render children()}

@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: oven-sh/setup-bun@v2
       - run: bun i
-      - run: npm run build
+      - run: PUBLIC_BASE_PATH=${{ secrets.PUBLIC_BASE_PATH }} npm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4

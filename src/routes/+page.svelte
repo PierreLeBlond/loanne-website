@@ -6,11 +6,12 @@
 	import competences from '$content/competences.md?raw';
 	import PerfactiveLink from '$components/perfactive-link.svelte';
 	import Fern from '$components/fern.svelte';
+	import { asset } from '$app/paths';
 </script>
 
 <main class="aligns-items-center grid grid-rows-4 gap-8 pt-16 [grid-area:hero]">
 	<div class="flex w-full items-end justify-between gap-16">
-		<img src="/profil.jpg" class="aspect-square h-full rounded-sm shadow-sm" />
+		<img src={asset('/profil.jpg')} class="aspect-square h-full rounded-sm shadow-sm" />
 		<article class="prose max-w-none prose-p:indent-6">
 			<SvelteMarkdown source={description}></SvelteMarkdown>
 		</article>
