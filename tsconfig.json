@@ -11,8 +11,9 @@
 		"sourceMap": true,
 		"strict": true,
 		"moduleResolution": "bundler",
+    "baseUrl": "./",
     "paths": {
-      "$content/*": ["src/content/*"],
+      "$content/*": [".src/content/*"],
       "$components/*": ["src/lib/components/*"]
     }
 	}
