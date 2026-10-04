@@ -106,7 +106,7 @@
 			class="relative col-span-2 row-span-2 grid grid-rows-subgrid place-items-center justify-items-center pt-40 lg:col-span-1 lg:py-10 lg:pt-0"
 		>
 			<div
-				class="absolute -top-20 flex w-64 items-center justify-center lg:relative lg:-top-8 lg:w-full"
+				class="absolute -top-20 flex w-64 items-center justify-center lg:relative lg:-top-4 lg:w-full"
 			>
 				<Fern></Fern>
 			</div>

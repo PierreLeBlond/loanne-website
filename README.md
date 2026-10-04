@@ -43,5 +43,5 @@ You can preview the production build with `npm run preview`.
 
 ## backlog
 
-- [] Fern y wind direction is inverted
-- [] Fern bug when focusing site again
+- [x] Fern y wind direction is inverted
+- [x] Fern bug when focusing site again
