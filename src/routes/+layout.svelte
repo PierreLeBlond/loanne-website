@@ -13,12 +13,16 @@
 
 	let toSection = $state('');
 
+	const getSection = (pathname: string) => {
+		return pathname.split(`${PUBLIC_BASE_PATH}/` || '/', 2)[1].split('/')[0];
+	};
+
 	onNavigate(({ from, to }) => {
 		const sections = data.pages.map(({ section }) => section);
 		const fromPathname = from?.url.pathname ?? '';
-		const fromSection = fromPathname.split(PUBLIC_BASE_PATH || '/', 2)[1];
+		const fromSection = getSection(fromPathname);
 		const toPathname = to?.url.pathname ?? '';
-		toSection = toPathname.split(PUBLIC_BASE_PATH || '/', 2)[1];
+		toSection = getSection(toPathname);
 		transitToRight = sections.indexOf(fromSection) < sections.indexOf(toSection);
 	});
 </script>
