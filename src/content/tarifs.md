@@ -1,3 +1,4 @@
-Tarifs de séance :
-- 60e pour 55min
-- 80e pour 1h25
+Tarif des séances :
+
+60€ pour 55min,\
+80€ pour 1h25

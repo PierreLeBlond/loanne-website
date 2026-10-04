@@ -9,7 +9,7 @@ const config: Config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: `/${process.env.PUBLIC_BASE_PATH}` || ""
+      base: process.env.PUBLIC_BASE_PATH ? `/${process.env.PUBLIC_BASE_PATH}` : ""
     },
     alias: {
       $content: resolve('./src/content'),

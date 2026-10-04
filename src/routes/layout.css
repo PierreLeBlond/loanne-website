@@ -9,6 +9,18 @@
   src: url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: Georgia;
+  src: url("/georgia.ttf");
+}
+
 @theme {
-  --font-sans: "Satoshi", sans-serif; 
+  --font-default: "Georgia", sans-serif; 
+  --font-sans: "Satoshi"
+}
+
+@theme inline {
+  --color-primary: var(--color-teal-900);
+  --color-secondary: var(--color-taupe-200);
+  --shadow-top: 0 -1px 3px 0 rgb(0 0 0 / 0.1), 0 -1px 2px -1px rgb(0 0 0 / 0.1);
 }

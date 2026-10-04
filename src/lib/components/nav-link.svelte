@@ -11,4 +11,6 @@
 	let { href, children }: Props = $props();
 </script>
 
-<a {href} class={cn(page.url.pathname == href && 'text-teal-900')}>{@render children()}</a>
+<a {href} class={cn(page.url.pathname == href && 'text-primary', 'font-sans')}
+	>{@render children()}</a
+>

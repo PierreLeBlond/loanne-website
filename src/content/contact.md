@@ -1,11 +1,21 @@
-1 rue Graumann, 67000 Strasbourg
+#### Horaires des consultations :
+- **Lundi** et **Mercredi**, de **10h** à **18h**.
+- **Mardi**, de **9h** à **17h**.
+- **Jeudi** en visio exclusivement, de **9h** à **13h**.
 
-Sonner à « Psychologues » puis entrer par la première porte à droite qui donne sur la salle d’attente
+<br/>
 
-Tarifs de séance : 
+Le cabinet se situe au **1 rue Graumann, 67000 Strasbourg**.
 
-- 60€ (55min)
+Sonner à « Psychologues » puis entrer par la première porte à droite qui donne sur la salle d’attente.
 
-- 80€ (1h25)
+<br/>
 
-Photo cabinet : salle d’attente & bureau
+#### Tarif des séances :
+
+- **60€ pour 55min**,
+- **80€ pour 1h25**
+
+Règlement par virement bancaire uniquement.
+
+**Les séances ne sont pas remboursées par la sécurité sociale**. Vous pouvez vous renseigner auprès de votre mutuelle pour une prise en charge.

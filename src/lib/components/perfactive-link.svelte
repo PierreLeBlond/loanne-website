@@ -1,8 +1,9 @@
-<div class="prose flex flex-col gap-4">
-	Prise de rendez-vous uniquement via Perfactive
+<div class="flex flex-col gap-4">
+	<p class="text-sm text-gray-500">Prise de rendez-vous via Perfactive</p>
 	<a
-		href="https://perfactive.fr"
-		class="rounded-sm bg-linear-to-t from-gray-400 to-gray-200 px-4 py-2 text-center text-gray-900 no-underline shadow-sm"
-		>Lien vers Perfactive</a
+		href="https://perfactive.fr/loanne-meuret-marcucci/book"
+		target="_blank"
+		class="rounded-full border border-primary bg-primary p-4 text-center font-sans font-bold text-secondary no-underline shadow-xl transition-colors hover:bg-secondary hover:text-primary"
+		>Prendre RDV en ligne</a
 	>
 </div>
