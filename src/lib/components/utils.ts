@@ -15,7 +15,7 @@ export const norm = (v: Vector) => {
   return Math.sqrt(v.x * v.x + v.y * v.y);
 };
 
-export function cn(...inputs) {
+export function cn(...inputs: (string | boolean)[]) {
   // Merge class names
   return twMerge(clsx(inputs));
 }

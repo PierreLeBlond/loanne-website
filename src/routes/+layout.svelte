@@ -5,20 +5,21 @@
 	import { fly } from 'svelte/transition';
 	import Menu from '$components/menu.svelte';
 	import { onNavigate } from '$app/navigation';
-	import { resolve } from '$app/paths';
+	import { PUBLIC_BASE_PATH } from '$env/static/public';
 
 	let { data, children } = $props();
 
 	let transitToRight = $state(false);
 
-	let section = $state('');
+	let toSection = $state('');
 
 	onNavigate(({ from, to }) => {
-		const pathnames = data.pages.map(({ pathname }) => resolve(pathname));
+		const sections = data.pages.map(({ section }) => section);
 		const fromPathname = from?.url.pathname ?? '';
+		const fromSection = fromPathname.split(PUBLIC_BASE_PATH || '/', 2)[1];
 		const toPathname = to?.url.pathname ?? '';
-		section = toPathname.substring(1).split('/')[0];
-		transitToRight = pathnames.indexOf(fromPathname) < pathnames.indexOf(toPathname);
+		toSection = toPathname.split(PUBLIC_BASE_PATH || '/', 2)[1];
+		transitToRight = sections.indexOf(fromSection) < sections.indexOf(toSection);
 	});
 </script>
 
@@ -26,7 +27,7 @@
 <div
 	class="grid min-h-dvh grid-cols-[16px_1fr_16px] grid-rows-[70px_auto_60px] overflow-x-hidden bg-secondary font-default [grid-template-areas:'header_header_header'_'._content_.'_'footer_footer_footer'] sm:grid-cols-[1fr_640px_1fr] lg:grid-cols-[1fr_1024px_1fr]"
 >
-	{#key section}
+	{#key toSection}
 		<div
 			class="relative w-full [grid-area:content] sm:px-8"
 			in:fly={{ x: transitToRight ? '100%' : '-100%' }}

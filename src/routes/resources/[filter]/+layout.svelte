@@ -42,11 +42,11 @@
 >
 	<Article>
 		<h2>RESSOURCES</h2>
-		{#each categories as category, index (category.label)}
+		{#each categories as category (category.label)}
 			<div in:fly={{ x: -100 }} out:fly={{ x: 100 }}>
 				<h4>{category.label}</h4>
 				<ul>
-					{#each category.resources as resource, index (resource.content)}
+					{#each category.resources as resource (resource.content)}
 						<li
 							animate:flip={{ duration: 1000 / category.resources.length }}
 							in:fade
